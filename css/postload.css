@@ -1,0 +1,429 @@
+/*
+https://cssnano.co/playground/
+https://www.toptal.com/developers/cssminifier
+*/
+
+
+.checks,.uk,.year{
+	text-align:center
+}
+.checks,.uk,.year,th[class]{
+	white-space:nowrap
+}
+.dialog ol,td{
+	letter-spacing:.025em
+}
+.dialog ol,label{
+	color:var(--color);
+	font-size:.8rem
+}
+button,input,tbody>tr{
+	cursor:pointer
+}
+.gradientText{
+	--degrees:0deg;
+	--text-gradient:linear-gradient(var(--degrees), red, #f90, #ff0);
+	display:block;
+	position:relative;
+	max-width:100%;
+	z-index:0;
+	margin:var(--v-space-0_5) 0
+}
+.dialog .gradientText{
+	--focus-outline-offset:3px;
+	border:var(--border-corners);
+	border-radius:var(--corners);
+	border-width:var(--corners);
+	border-color:transparent;
+	margin-top:0;
+	font-size:1.125rem;
+	text-align:center;
+	letter-spacing:.2em
+}
+button,input[type=text]{
+	max-width:100%;
+	letter-spacing:inherit
+}
+.gradientText>*{
+	display:block;
+	font-size:2em;
+	font-weight:400;
+	text-wrap:balance;
+	transform:scale(1,1.125);
+	top:0;
+	left:0;
+	max-width:100%;
+	width:100%
+}
+.gradientText.text-large>*{
+	font-size:2.5em;
+	margin-top:var(--v-space-0_5)
+}
+.gradientText.text-small>*{
+	font-size:1.3em
+}
+.gradientText>:first-child{
+	background-image:var(--text-gradient);
+	background-size:100%;
+	-webkit-background-clip:text;
+	background-clip:text;
+	-webkit-text-fill-color:transparent;
+	text-shadow:none
+}
+.gradientText>:nth-child(2){
+	z-index:-1;
+	position:absolute;
+	top:1px;
+	color:transparent;
+	text-shadow:0 2px 6px #000;
+	user-select:none
+}
+button,input{
+	position:relative
+}
+.gradientText>:nth-child(3){
+	visibility:hidden;
+	opacity:0;
+	position:relative;
+	user-select:none
+}
+@media print{
+	.gradientText>:nth-child(2),.gradientText>:nth-child(3){
+		display:none
+}
+}
+details>div{
+	max-width:100%;
+	margin:0;
+	overflow:auto hidden;
+	/* To remove from keyboard chain on Safari */
+	display: none;
+}
+details[open]>div{
+	/* To reinstate to keyboard chain on Safari */
+	display: block;
+}
+@media(min-width:40em){
+	details>div{
+		overflow:initial
+}
+}
+.responsive_wrap{
+	max-width:100%;
+	overflow:auto hidden
+}
+table{
+	border-collapse:collapse;
+	min-width:16rem;
+	width:100%
+}
+tr:nth-child(2n){
+	background:var(--bg)
+}
+tr:nth-child(odd){
+	background:var(--linear-gradient-3)
+}
+thead tr{
+	background:#000
+}
+td,th{
+	border-top:1px solid var(--border)
+}
+th[class]{
+	color:var(--color2);
+	background-color:var(--bg);
+	font-size:smaller;
+	letter-spacing:.04em;
+	padding:0 var(--h-space-0_5);
+	font-weight:400
+}
+td{
+	padding:var(--v-space-0_25) var(--h-space-0_5);
+	vertical-align:inherit
+}
+td+td,th+th{
+	border-left:1px solid var(--border)
+}
+tbody tr:hover{
+	background:var(--linear-gradient-1);
+	color:var(--tr-hover)
+}
+.artist,.track{
+	color:#e8b600;
+	text-wrap:balance;
+	min-width:calc((300px - 24px)/ 2)
+}
+.artist{
+	width:40%
+}
+.requestee {
+	max-width: 18ch;
+}
+.uk,.year{
+	color:#e19000;
+	width:max-content
+}
+.checks{
+	font-size:.7rem;
+	width:min-content
+}
+.btn-close,button{
+	width:max-content
+}
+tbody tr.-js-disabled{
+	cursor:initial;
+	color:var(--disabled);
+	background-color:transparent;
+	background:0 0
+}
+tbody tr.-js-disabled:hover{
+	cursor:not-allowed;
+	background-color:transparent
+}
+.-js-disabled .artist,.-js-disabled .track,.-js-disabled .year,.-js-disabled .uk {
+	opacity: .75;
+}
+label{
+	display:block;
+	margin-bottom:var(--v-space-0_25);
+	/* ??? might be requests page only? */
+    margin-top: var(--v-space); 
+}
+input{
+	appearance:none;
+	background-color:Canvas;
+	background-color:var(--bg);
+	border:2px solid var(--border);
+	display:inline-block;
+	padding:.35em
+}
+input[type=checkbox]{
+	border-image:var(--border-gradient) 1;
+	border-radius:0;
+	color:var(--bg);
+	font-size:var(--fs-400);
+	height:1em;
+	margin:.25em 0 0;
+	width:1em
+}
+input[type=text]{
+	border-radius:var(--corners);
+	color:var(--color);
+	font-size:var(--fs-400);
+	height:2em;
+	width:auto;
+	font:inherit
+}
+.dialog,.dialog ol{
+	border:var(--border-corners);
+	background-color:var(--bg)
+}
+input[type=checkbox]:after{
+	width:1em;
+	height:1em;
+	position:absolute;
+	top:50%;
+	left:50%;
+	filter:drop-shadow(0 2px #000)
+}
+input[type=checkbox]:checked:after{
+	transform:translate3d(-50%,-50%,0);
+	content:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Cpath d='m4 64 6-8 28 19C49 41 68 18 85 4l7 8C74 26 49 61 46 92L4 64Z' style='fill:%23ff0;stroke:%23ff0;stroke-width:5'/%3E%3C/svg%3E");
+	transform:translate3d(-50%,-50%,0) scale(1.25)
+}
+input[type=checkbox]:disabled:after {
+	content: url("/records/img/icons/record-7.svg");
+	width: 2.5em;
+	height: 2.5em;
+	cursor:not-allowed;
+	transform: translate3d(-50%, -50%, 0) scale(.6);
+}
+.dialog{
+	background-image:var(--bg-image);
+	margin:auto;
+	max-height:90vh;
+	max-width:96vw;
+	overflow-y:auto;
+	padding:var(--h-space);
+	overscroll-behavior:none;
+	border-radius:var(--corners);
+	text-align:left
+}
+.noDialogSupport .dialog {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	width: 90%;
+	z-index: 1;
+}
+.noDialogSupport .dialog:not([hidden]) {
+	display: block;
+}
+::backdrop{
+	background-color:rgba(0,0,0,.75)
+}
+.noDialogSupport .-js-dialogBg {
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: hsla(0, 0%, 0%, .85);
+}
+.-js-scrollLock{
+	overflow:hidden
+}
+.dialog h2{
+	text-transform:uppercase
+}
+.dialog ol{
+	padding:4px 4px 4px .9rem;
+	max-height:21vh;
+	overflow-y:scroll;
+	overscroll-behavior:contain;
+	border-radius:var(--corners)
+}
+.dialog li+li{
+	margin-top:var(--v-space-0_25)
+}
+.message{
+	margin:var(--v-space-0_25) 0
+}
+@media screen and (orientation:landscape){
+	.dialog ol{
+		max-height:21vh
+}
+}
+@media screen and (orientation:portrait){
+	.dialog ol{
+		max-height:36vh
+}
+}
+@supports(height:100dvh){
+	.dialog{
+		max-height:97dvh
+}
+	@media screen and (orientation:portrait){
+		.dialog ol{
+			max-height:32dvh
+}
+	}
+	@media screen and (orientation:landscape){
+		.dialog ol{
+			max-height:25dvh
+}
+	}
+}
+.btn-delete,.btn-refresh,.btn-finish,.btn-remove,.btn-submit,input[type=text]{
+	border:var(--border-corners)
+}
+.checkedList:focus-visible,button:focus,.dialog:focus-visible,input[type=text]:focus{
+	border-color:var(--color)
+}
+.checkedList:focus-visible,.dialog:focus-visible{
+	outline:2px solid var(--focus-outline-color);
+	border-color:var(--color)
+}
+:target {
+	/* Scroll padding above anchor link */
+	scroll-padding-block-start: 2rem;
+}
+:focus {
+	/* Scroll padding below focussed element to keep in viewport */
+	scroll-padding-block-end: 8vh;
+}
+button{
+	background-color:var(--bg);
+	border-radius:var(--corners);
+	color:var(--accent);
+	padding:.25rem .5rem;
+	z-index:1;
+	font:inherit
+}
+button:focus,button:hover,input[type=text]:focus,input[type=text]:hover{
+	--focus-outline-offset:-2px;
+	color:var(--accent-hover);
+	border-color:var(--color)
+}
+@media(min-width:20em){
+	button:focus,button:hover{
+		--focus-outline-offset:2px
+}
+}
+.btn-close{
+	position:absolute;
+	top:0;
+	right:0;
+	padding:.25em .5em;
+	border:var(--border-corners);
+	border-radius:var(--corners);
+	border-width:0 0 6px 6px;
+	font-size:.7rem;
+    width: 1.3rem;
+}
+
+.btn_wrap-more{
+	text-align:right;
+	margin:var(--v-space-0_25) 0 var(--v-space);
+	font-size:smaller
+}
+.btn-more{
+	background:0 0;
+	border:none;
+	padding:.125rem .25rem;
+	font-size:smaller;
+	text-decoration:underline;
+	text-underline-offset:.25em
+}
+.btn_wrap-submit{
+	min-height:2.1875rem;
+	display:flex;
+	gap:var(--h-space);
+	justify-content:space-between;
+    margin-top: var(--v-space);
+}
+details > .btn_wrap-submit {
+	margin: var(--v-space);
+}
+.btn-finish,.btn-submit{
+	border-image:none;
+	border-radius:var(--corners);
+	margin-top:0;
+}
+::selection{
+	background-color:var(--selectionColor);
+	color:var(--selectionBg);
+	opacity:1;
+	text-shadow:none
+}
+.gradientText>:first-child::selection{
+	background-image:initial;
+	-webkit-background-clip:initial;
+	background-clip:initial;
+	-webkit-text-fill-color:initial
+}
+.responsive_wrap,a[href],button,summary{
+	outline:transparent solid 2px;
+	outline-offset:var(--focus-outline-offset,2px)
+}
+.responsive_wrap:focus,:focus-visible,a[href]:focus,button:focus,summary:focus{
+	outline:2px solid var(--focus-outline-color,#ff0);
+	outline-offset:var(--focus-outline-offset,2px)
+}
+@supports selector(:focus-visible){
+	.responsive_wrap:focus:not(:focus-visible),a[href]:focus:not(:focus-visible),button:focus:not(:focus-visible),summary:focus:not(:focus-visible){
+		outline:0
+}
+}
+
+
+/* Trying to change autocomplete styles in WebKit */
+input[type=text]:-webkit-autofill,
+input[type=text]:-webkit-autofill:hover, 
+input[type=text]:-webkit-autofill:focus {
+  border: var(--border-corners);
+  -webkit-text-fill-color: var(--color);
+  -webkit-box-shadow: 0 0 0px 1000px var(--bg) inset;
+}

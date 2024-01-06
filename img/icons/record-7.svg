@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <circle cx="64" cy="64" r="62" style="fill:#444;stroke:#fffbfb;stroke-width:1.35px"/>
+  <circle cx="64" cy="64" r="42.7"/>
+  <circle cx="64" cy="64" r="30.7" style="fill:#b78002"/>
+  <circle cx="64" cy="64" r="28" style="fill:none;stroke:#ff9200;stroke-width:1.33px;stroke-linejoin:round;stroke-miterlimit:2"/>
+  <path d="M59 68 8 37l12-16L36 8l35 52 49 30-11 18-19 12-31-52Z" style="filter:blur(4px);fill:#fff;fill-opacity:.3;fill-rule:nonzero"/>
+  <circle cx="64" cy="64" r="10.7"/>
+  <g style="fill:none;stroke:#000;stroke-width:.13px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5">
+    <circle cx="64" cy="64" r="60"/>
+    <circle cx="64" cy="64" r="58.7"/>
+    <circle cx="64" cy="64" r="57.3"/>
+    <circle cx="64" cy="64" r="56"/>
+    <circle cx="64" cy="64" r="54.7"/>
+    <circle cx="64" cy="64" r="53.3"/>
+    <circle cx="64" cy="64" r="52"/>
+    <circle cx="64" cy="64" r="50.7"/>
+    <circle cx="64" cy="64" r="49.3"/>
+    <circle cx="64" cy="64" r="48"/>
+    <circle cx="64" cy="64" r="46.7"/>
+    <circle cx="64" cy="64" r="45.3"/>
+    <circle cx="64" cy="64" r="44"/>
+    <circle cx="64" cy="64" r="40" style="stroke:#605a5a"/>
+    <circle cx="64" cy="64" r="37.3" style="stroke:#636363"/>
+    <circle cx="64" cy="64" r="34.7" style="stroke:#636363"/>
+    <circle cx="64" cy="64" r="32" style="stroke:#636363"/>
+  </g>
+</svg>

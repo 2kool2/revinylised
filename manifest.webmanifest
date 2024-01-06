@@ -1,0 +1,14 @@
+{
+  "name": "Record Request",
+  "short_name": "Records",
+  "start_url": "https://revinylised.uk/",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+
+  "icons": [
+    { "src": "img/icons/record-7.192.png", "type": "image/png", "sizes": "192x192", "purpose": "any maskable" },
+    { "src": "img/icons/record-7.512.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable" }
+  ]
+}
