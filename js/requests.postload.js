@@ -327,7 +327,7 @@ const getRequestDataAsObjectFromCheckboxes = (_) => {
 function postRequestData() {
   const data = getRequestDataAsObjectFromCheckboxes();
 
-  fetch('/records/requests/post-requests/', {
+  fetch('https://websemantics.uk/records/requests/post-requests/', {
     method: 'POST',
     body: JSON.stringify(data)
   })
@@ -348,7 +348,7 @@ function deleteAllRequestData() {
 //   console.log('REMOVING ALL REQUESTS:');
   reportConsole('REMOVING ALL REQUESTS:');
 
-  fetch('/records/requests/delete-all-requests/', {
+  fetch('https://websemantics.uk/records/requests/delete-all-requests/', {
     method: 'POST'
   })
     .then((response) => reportConsole('deleteAllRequestData() success'))
@@ -604,7 +604,7 @@ function reduceAndRemoveEmptyRequestees(requests) {
 // Overwrite existing request data
 
 function rewriteRequestData(data) {
-    fetch('/records/requests/rewrite-requests/', {
+    fetch('https://websemantics.uk/records/requests/rewrite-requests/', {
         method: 'POST',
         body: JSON.stringify(data)
     })

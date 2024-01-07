@@ -353,7 +353,7 @@ for (const group of collectionArr) {
         function postRequestData() {
             const data = getRequestDataAsObjectFromCheckboxes();
           
-            fetch('/records/requests/post-requests/', {
+            fetch('https://websemantics.uk/records/requests/post-requests/', {
               method: 'POST',
               body: JSON.stringify(data)
             })
