@@ -232,7 +232,7 @@ input[type=checkbox]:checked:after{
 	transform:translate3d(-50%,-50%,0) scale(1.25)
 }
 input[type=checkbox]:disabled:after {
-	content: url("/records/img/icons/record-7.svg");
+	content: url("/img/icons/record-7.svg");
 	width: 2.5em;
 	height: 2.5em;
 	cursor:not-allowed;
