@@ -5,7 +5,7 @@
 // Only required after initial page load / render
 
 // Requires collectionArr data in /records/data/records.js
-import { collectionArr } from '/records/data/records.min.js';
+import { collectionArr } from '/data/records.min.js';
 
 let requestsData = [];
 let refresher = null;
